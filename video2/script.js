@@ -59,11 +59,23 @@ const fs=require('fs');
 
 
 
-fs.rm("./copy", {recursive:true},function(err){
-    if(err){
-        console.log("delete nahi hua");
-    }
-    else{
-        console.log("delete ho gaya")
-    }
+// fs.rm("./copy", {recursive:true},function(err){
+//     if(err){
+//         console.log("delete nahi hua");
+//     }
+//     else{
+//         console.log("delete ho gaya")
+//     }
+// })
+
+
+
+// http module
+
+const http=require('http');
+
+const server=http.createServer(function(req,res){
+    res.end("You just started a server")
 })
+
+server.listen(3000);
