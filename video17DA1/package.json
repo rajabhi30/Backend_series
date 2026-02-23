@@ -17,6 +17,7 @@
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.2.1",
-    "mongoosh": "^0.0.7"
+    "mongoosh": "^0.0.7",
+    "multer": "^2.0.2"
   }
 }
